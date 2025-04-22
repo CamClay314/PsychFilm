@@ -123,9 +123,48 @@ section p, section ul {
     height: auto;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    filter: grayscale(50%);
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* Horror-themed hero section */
+.horror-hero {
+    background: url('images/overlook-hotel-dark.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    padding: 5rem 1rem;
+}
+
+.horror-hero h1 {
+    font-size: 3.5rem;
+    font-family: 'Creepster', cursive; /* Use a horror-themed font */
+}
+
+.horror-hero p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.horror-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.horror-btn:hover {
+    background-color: #8b0000;
+    transform: scale(1.1);
+}
+
+/* Footer quote */
+.footer-quote {
+    font-style: italic;
+    color: #ff0000;
+    margin-top: 1rem;
 }
