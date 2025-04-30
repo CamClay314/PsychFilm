@@ -510,3 +510,10 @@ footer {
     }
 }
 
+.featured-grid img {
+    width: 300px; /* Set a consistent width */
+    height: 200px; /* Set a consistent height */
+    object-fit: cover; /* Ensure the image scales properly without distortion */
+    border-radius: 5px; /* Optional: Add rounded corners for a polished look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
